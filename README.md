@@ -6,8 +6,4 @@ The objective of this minigame is to remain calm. Measurements of brainwaves wil
 
 Some of these assets were not originally created by us.
 
-Current Progress (Incomplete):
-- Added walking/attack animations for player and enemy
-- Added looping background
-
 (MORE DETAILS TO BE ADDED LATER)
