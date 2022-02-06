@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 0.5
+  enemy: {fileID: 381112537}
 --- !u!1 &381112537
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.75
   animator: {fileID: 381112541}
+  end: 0
 --- !u!212 &381112539
 SpriteRenderer:
   m_ObjectHideFlags: 0

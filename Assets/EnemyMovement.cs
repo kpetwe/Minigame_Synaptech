@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float speed = 0.10f;
     [SerializeField] Animator animator;
+    public bool end = false;
 
     void Start() {
         animator.SetBool("Lose", false);
@@ -23,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
             Debug.Log("You lose");
             animator.SetBool("Lose", true);  
             speed = 0;  
+            end = true;
         }
     }
 }
