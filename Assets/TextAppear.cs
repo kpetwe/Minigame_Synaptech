@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class TextAppear : MonoBehaviour
 {
-    [SerializeField] GameObject[] text;
-    //[SerializeField] GameObject button1;
-    // Start is called before the first frame update
+    [SerializeField] GameObject text;
+    [SerializeField] Animator animator;
+
     void Start()
     {
-        foreach(GameObject i in text) {
-            i.SetActive(true);
-        }
+        text.SetActive(false);
     }
 
     void Update() {
-
+        if(animator.GetBool("Lose")) {
+            text.SetActive(true);
+        }
     }
 }

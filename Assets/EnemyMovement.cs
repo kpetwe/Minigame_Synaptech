@@ -12,11 +12,15 @@ public class EnemyMovement : MonoBehaviour
         animator.SetBool("Lose", false);
     }
     
-    // Update is called once per frame
-    void Update()
+    public void Process(float[] newSample, double timeStamp)
     {
-        Vector3 horizontal = new Vector3(speed, 0, 0);
+        Vector3 horizontal = new Vector3(0f, 0f, 0f);
+        if(newSample[2] > 1.15f) {
+            horizontal = new Vector3(speed, 0f, 0f);
+        }
+
         transform.position = transform.position + horizontal * Time.deltaTime;
+        Debug.Log(newSample[2]);
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
